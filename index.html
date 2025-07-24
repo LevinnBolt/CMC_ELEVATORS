@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMC ELEVATORS</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/0/189.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+
+    <header class="glass">
+        <nav class="navbar container">
+            <a href="#home" class="logo">CMC ELEVATORS.</a>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content scroll-animate">
+                    <h1>Elevating Your World, One Floor at a Time</h1>
+                    <p>Your trusted partner in innovative, safe, and reliable vertical transportation solutions.</p>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+                <div class="hero-image scroll-animate">
+                    <img src="CMC LOGO.jpg" alt="CMC Elevators Logo" />
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container glass scroll-animate">
+                <h2 class="section-title">About Us</h2>
+                <p>Since 1999, <strong>CMC Elevators</strong> has been a trusted name in the elevator and lift industry, delivering reliable, innovative, and high-quality vertical transportation solutions across India.</p>
+                <h3>Who We Are</h3>
+                <p>With over two decades of experience, we specialize in the manufacturing, installation, and servicing of a wide range of elevators.</p>
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li><strong>Expertise You Can Trust</strong> – A proven track record across Tamil Nadu and Andhra Pradesh.</li>
+                    <li><strong>Skilled Team</strong> – Dedicated engineers ensuring seamless execution and support.</li>
+                    <li><strong>Quality Without Compromise</strong> – Premium components for long-lasting performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container scroll-animate">
+                <h2 class="section-title">Our Solutions</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <i class="fas fa-users card-icon"></i>
+                            <h3 class="card-title">Passenger Lifts</h3>
+                            <p class="card-description">Engineered for safety and reliability, our lifts offer a smooth, cost-effective solution for residential and commercial buildings.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <i class="fas fa-box-open card-icon"></i>
+                            <h3 class="card-title">Goods & Freight Lifts</h3>
+                            <p class="card-description">Robust, high-capacity elevators designed to safely transport heavy materials in industrial, warehouse, and commercial settings.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <i class="fas fa-star-of-life card-icon"></i>
+                            <h3 class="card-title">Hospital Lifts</h3>
+                            <p class="card-description">Ensuring gentle, jerk-free transport for patients and sensitive medical equipment, designed with hygiene and reliability as priorities.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <i class="fas fa-home card-icon"></i>
+                            <h3 class="card-title">Home Lifts</h3>
+                            <p class="card-description">Add luxury and convenience to your residence. Our compact, stylish home lifts offer accessibility with minimal structural changes.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <i class="fas fa-robot card-icon"></i>
+                            <h3 class="card-title">Automatic Lifts</h3>
+                            <p class="card-description">Experience seamless travel with state-of-the-art automatic lifts, featuring intelligent controls and energy-efficient designs.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <i class="fas fa-tools card-icon"></i>
+                            <h3 class="card-title">Modernization & AMC</h3>
+                            <p class="card-description">Upgrade your elevators for enhanced safety and performance. Our Annual Maintenance Contracts ensure flawless 24/7 operation.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container glass scroll-animate">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="contact-intro text-center">Have a question or want a quote? Fill out the form below, and we'll get back to you!</p>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" required />
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2025 CMC Elevators. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
